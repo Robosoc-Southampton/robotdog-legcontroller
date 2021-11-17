@@ -372,33 +372,6 @@ Wire Wire Line
 	2650 3350 2550 3350
 Wire Wire Line
 	3150 3250 3250 3250
-Text GLabel 1150 4050 2    50   Input ~ 0
-GENERAL_A
-Text GLabel 1150 4150 2    50   Input ~ 0
-GENERAL_B
-Text GLabel 1150 4250 2    50   Input ~ 0
-GENERAL_C
-Wire Wire Line
-	1150 4050 1050 4050
-Wire Wire Line
-	1050 4150 1150 4150
-Wire Wire Line
-	1150 4250 1050 4250
-$Comp
-L power:GND #PWR?
-U 1 1 61C68C47
-P 1150 4450
-F 0 "#PWR?" H 1150 4200 50  0001 C CNN
-F 1 "GND" H 1155 4277 50  0000 C CNN
-F 2 "" H 1150 4450 50  0001 C CNN
-F 3 "" H 1150 4450 50  0001 C CNN
-	1    1150 4450
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	1150 4450 1150 4350
-Wire Wire Line
-	1150 4350 1050 4350
 $Comp
 L power:+5V #PWR?
 U 1 1 61D61ED2
@@ -427,51 +400,6 @@ Wire Wire Line
 	2100 1400 2350 1400
 Wire Wire Line
 	2100 1050 2100 1000
-$Comp
-L Connector_Generic:Conn_01x04 J?
-U 1 1 61C5169E
-P 850 4150
-F 0 "J?" H 768 4467 50  0000 C CNN
-F 1 "General_Pins" H 768 4376 50  0000 C CNN
-F 2 "" H 850 4150 50  0001 C CNN
-F 3 "~" H 850 4150 50  0001 C CNN
-	1    850  4150
-	-1   0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR04
-U 1 1 6179673C
-P 1200 5300
-F 0 "#PWR04" H 1200 5050 50  0001 C CNN
-F 1 "GND" H 1205 5127 50  0000 C CNN
-F 2 "" H 1200 5300 50  0001 C CNN
-F 3 "" H 1200 5300 50  0001 C CNN
-	1    1200 5300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1200 5200 1200 5300
-Wire Wire Line
-	1050 5200 1200 5200
-Wire Wire Line
-	1050 5000 1150 5000
-Wire Wire Line
-	1050 5100 1150 5100
-Text GLabel 1150 5000 2    50   Input ~ 0
-I2C_SDA
-Text GLabel 1150 5100 2    50   Input ~ 0
-I2C_SCL
-$Comp
-L Connector_Generic:Conn_01x03 J2
-U 1 1 61793AA3
-P 850 5100
-F 0 "J2" H 768 5417 50  0000 C CNN
-F 1 "I2C" H 768 5326 50  0000 C CNN
-F 2 "" H 850 5100 50  0001 C CNN
-F 3 "~" H 850 5100 50  0001 C CNN
-	1    850  5100
-	-1   0    0    -1  
-$EndComp
 $Comp
 L Connector_Generic:Conn_01x04 J?
 U 1 1 61B3D105
@@ -521,104 +449,6 @@ Wire Wire Line
 	1150 3300 1050 3300
 Wire Wire Line
 	1050 3200 1150 3200
-$Comp
-L Connector:USB_B_Mini J?
-U 1 1 61C85C74
-P 2450 4800
-F 0 "J?" H 2507 5267 50  0000 C CNN
-F 1 "USB_B_Mini" H 2507 5176 50  0000 C CNN
-F 2 "" H 2600 4750 50  0001 C CNN
-F 3 "~" H 2600 4750 50  0001 C CNN
-	1    2450 4800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 61C9C39E
-P 3350 4800
-F 0 "R?" V 3143 4800 50  0000 C CNN
-F 1 "68" V 3234 4800 50  0000 C CNN
-F 2 "" V 3280 4800 50  0001 C CNN
-F 3 "~" H 3350 4800 50  0001 C CNN
-	1    3350 4800
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 61C9D08A
-P 3350 4900
-F 0 "R?" V 3250 4900 50  0000 C CNN
-F 1 "68" V 3150 4900 50  0000 C CNN
-F 2 "" V 3280 4900 50  0001 C CNN
-F 3 "~" H 3350 4900 50  0001 C CNN
-	1    3350 4900
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 61CB53AC
-P 3100 4400
-F 0 "R?" H 3170 4446 50  0000 L CNN
-F 1 "1.5k" H 3170 4355 50  0000 L CNN
-F 2 "" V 3030 4400 50  0001 C CNN
-F 3 "~" H 3100 4400 50  0001 C CNN
-	1    3100 4400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3100 4550 3100 4900
-Connection ~ 3100 4900
-Wire Wire Line
-	3100 4900 3200 4900
-$Comp
-L power:+3.3V #PWR?
-U 1 1 61CBCED0
-P 3100 4150
-F 0 "#PWR?" H 3100 4000 50  0001 C CNN
-F 1 "+3.3V" H 3115 4323 50  0000 C CNN
-F 2 "" H 3100 4150 50  0001 C CNN
-F 3 "" H 3100 4150 50  0001 C CNN
-	1    3100 4150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3100 4150 3100 4250
-$Comp
-L power:GND #PWR?
-U 1 1 61CC49B7
-P 2450 5300
-F 0 "#PWR?" H 2450 5050 50  0001 C CNN
-F 1 "GND" H 2455 5127 50  0000 C CNN
-F 2 "" H 2450 5300 50  0001 C CNN
-F 3 "" H 2450 5300 50  0001 C CNN
-	1    2450 5300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2450 5200 2450 5300
-Wire Wire Line
-	3600 4800 3500 4800
-Wire Wire Line
-	3500 4900 3600 4900
-$Comp
-L power:+5V #PWR?
-U 1 1 61D1E6C0
-P 2850 4150
-F 0 "#PWR?" H 2850 4000 50  0001 C CNN
-F 1 "+5V" H 2865 4323 50  0000 C CNN
-F 2 "" H 2850 4150 50  0001 C CNN
-F 3 "" H 2850 4150 50  0001 C CNN
-	1    2850 4150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2750 4600 2850 4600
-Wire Wire Line
-	2850 4600 2850 4150
-Wire Wire Line
-	2750 4800 3200 4800
-Wire Wire Line
-	2750 4900 3100 4900
 Wire Wire Line
 	3550 6200 3450 6200
 Wire Wire Line
@@ -1282,11 +1112,11 @@ Wire Wire Line
 Wire Wire Line
 	6500 5200 6750 5200
 Text GLabel 6750 2600 2    50   Input ~ 0
-GENERAL_A
+FUNCTION_0
 Text GLabel 6750 2700 2    50   Input ~ 0
-GENERAL_B
+FUNCTION_1
 Text GLabel 6750 2800 2    50   Input ~ 0
-GENERAL_C
+FUNCTION_2
 Wire Wire Line
 	6750 2600 6500 2600
 Wire Wire Line
@@ -1303,8 +1133,193 @@ Wire Wire Line
 Connection ~ 4700 2700
 Wire Wire Line
 	4700 2700 5300 2700
-Text GLabel 3600 4900 2    50   Input ~ 0
-USB_D-
 Text GLabel 3600 4800 2    50   Input ~ 0
 USB_D+
+Text GLabel 3600 4900 2    50   Input ~ 0
+USB_D-
+Wire Wire Line
+	2750 4900 3100 4900
+Wire Wire Line
+	2750 4800 3200 4800
+Wire Wire Line
+	2850 4600 2850 4150
+Wire Wire Line
+	2750 4600 2850 4600
+$Comp
+L power:+5V #PWR?
+U 1 1 61D1E6C0
+P 2850 4150
+F 0 "#PWR?" H 2850 4000 50  0001 C CNN
+F 1 "+5V" H 2865 4323 50  0000 C CNN
+F 2 "" H 2850 4150 50  0001 C CNN
+F 3 "" H 2850 4150 50  0001 C CNN
+	1    2850 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 4900 3600 4900
+Wire Wire Line
+	3600 4800 3500 4800
+Wire Wire Line
+	2450 5200 2450 5300
+$Comp
+L power:GND #PWR?
+U 1 1 61CC49B7
+P 2450 5300
+F 0 "#PWR?" H 2450 5050 50  0001 C CNN
+F 1 "GND" H 2455 5127 50  0000 C CNN
+F 2 "" H 2450 5300 50  0001 C CNN
+F 3 "" H 2450 5300 50  0001 C CNN
+	1    2450 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 4150 3100 4250
+$Comp
+L power:+3.3V #PWR?
+U 1 1 61CBCED0
+P 3100 4150
+F 0 "#PWR?" H 3100 4000 50  0001 C CNN
+F 1 "+3.3V" H 3115 4323 50  0000 C CNN
+F 2 "" H 3100 4150 50  0001 C CNN
+F 3 "" H 3100 4150 50  0001 C CNN
+	1    3100 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 4900 3200 4900
+Connection ~ 3100 4900
+Wire Wire Line
+	3100 4550 3100 4900
+$Comp
+L Device:R R?
+U 1 1 61CB53AC
+P 3100 4400
+F 0 "R?" H 3170 4446 50  0000 L CNN
+F 1 "1.5k" H 3170 4355 50  0000 L CNN
+F 2 "" V 3030 4400 50  0001 C CNN
+F 3 "~" H 3100 4400 50  0001 C CNN
+	1    3100 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61C9D08A
+P 3350 4900
+F 0 "R?" V 3250 4900 50  0000 C CNN
+F 1 "68" V 3150 4900 50  0000 C CNN
+F 2 "" V 3280 4900 50  0001 C CNN
+F 3 "~" H 3350 4900 50  0001 C CNN
+	1    3350 4900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61C9C39E
+P 3350 4800
+F 0 "R?" V 3143 4800 50  0000 C CNN
+F 1 "68" V 3234 4800 50  0000 C CNN
+F 2 "" V 3280 4800 50  0001 C CNN
+F 3 "~" H 3350 4800 50  0001 C CNN
+	1    3350 4800
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:USB_B_Mini J?
+U 1 1 61C85C74
+P 2450 4800
+F 0 "J?" H 2507 5267 50  0000 C CNN
+F 1 "USB_B_Mini" H 2507 5176 50  0000 C CNN
+F 2 "" H 2600 4750 50  0001 C CNN
+F 3 "~" H 2600 4750 50  0001 C CNN
+	1    2450 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J2
+U 1 1 61793AA3
+P 850 5100
+F 0 "J2" H 768 5417 50  0000 C CNN
+F 1 "I2C" H 768 5326 50  0000 C CNN
+F 2 "" H 850 5100 50  0001 C CNN
+F 3 "~" H 850 5100 50  0001 C CNN
+	1    850  5100
+	-1   0    0    -1  
+$EndComp
+Text GLabel 1150 5100 2    50   Input ~ 0
+I2C_SCL
+Text GLabel 1150 5000 2    50   Input ~ 0
+I2C_SDA
+Wire Wire Line
+	1050 5100 1150 5100
+Wire Wire Line
+	1050 5000 1150 5000
+Wire Wire Line
+	1050 5200 1200 5200
+Wire Wire Line
+	1200 5200 1200 5300
+$Comp
+L power:GND #PWR04
+U 1 1 6179673C
+P 1200 5300
+F 0 "#PWR04" H 1200 5050 50  0001 C CNN
+F 1 "GND" H 1205 5127 50  0000 C CNN
+F 2 "" H 1200 5300 50  0001 C CNN
+F 3 "" H 1200 5300 50  0001 C CNN
+	1    1200 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1200 4300 1300 4300
+Wire Wire Line
+	1200 4200 1300 4200
+Wire Wire Line
+	1200 4100 1300 4100
+Text GLabel 1200 4300 0    50   Input ~ 0
+FUNCTION_2
+Text GLabel 1200 4200 0    50   Input ~ 0
+FUNCTION_1
+Text GLabel 1200 4100 0    50   Input ~ 0
+FUNCTION_0
+Wire Wire Line
+	2000 4400 2000 4500
+Connection ~ 2000 4400
+Wire Wire Line
+	1900 4400 2000 4400
+Wire Wire Line
+	2000 4300 2000 4400
+Connection ~ 2000 4300
+Wire Wire Line
+	1900 4300 2000 4300
+Wire Wire Line
+	2000 4200 2000 4300
+Connection ~ 2000 4200
+Wire Wire Line
+	1900 4200 2000 4200
+Wire Wire Line
+	2000 4100 2000 4200
+Wire Wire Line
+	1900 4100 2000 4100
+$Comp
+L power:GND #PWR?
+U 1 1 6199B184
+P 2000 4500
+F 0 "#PWR?" H 2000 4250 50  0001 C CNN
+F 1 "GND" H 2005 4327 50  0000 C CNN
+F 2 "" H 2000 4500 50  0001 C CNN
+F 3 "" H 2000 4500 50  0001 C CNN
+	1    2000 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_DIP_x04 SW?
+U 1 1 6199597A
+P 1600 4300
+F 0 "SW?" H 1600 4767 50  0000 C CNN
+F 1 "Function" H 1600 4676 50  0000 C CNN
+F 2 "" H 1600 4300 50  0001 C CNN
+F 3 "~" H 1600 4300 50  0001 C CNN
+	1    1600 4300
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
