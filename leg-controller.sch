@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:leg-controller-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -43,17 +42,6 @@ F 2 "" H 1200 1250 50  0001 C CNN
 F 3 "" H 1200 1250 50  0001 C CNN
 	1    1200 1300
 	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Ferrite_Bead FB1
-U 1 1 6179AC46
-P 1200 1950
-F 0 "FB1" V 926 1950 50  0000 C CNN
-F 1 "Ferrite_Bead" V 1017 1950 50  0000 C CNN
-F 2 "" V 1130 1950 50  0001 C CNN
-F 3 "~" H 1200 1950 50  0001 C CNN
-	1    1200 1950
-	0    1    1    0   
 $EndComp
 $Comp
 L power:GNDPWR #PWR01
@@ -109,7 +97,7 @@ U 1 1 61C3EE73
 P 1350 1100
 F 0 "C1" H 1465 1146 50  0000 L CNN
 F 1 "470u" H 1465 1055 50  0000 L CNN
-F 2 "" H 1388 950 50  0001 C CNN
+F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 1388 950 50  0001 C CNN
 F 3 "~" H 1350 1100 50  0001 C CNN
 	1    1350 1100
 	1    0    0    -1  
@@ -136,23 +124,12 @@ F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/da
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP C2
-U 1 1 619318B9
-P 2350 1700
-F 0 "C2" H 2468 1746 50  0000 L CNN
-F 1 "CP" H 2468 1655 50  0000 L CNN
-F 2 "" H 2388 1550 50  0001 C CNN
-F 3 "~" H 2350 1700 50  0001 C CNN
-	1    2350 1700
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:CP C3
 U 1 1 61932BEC
 P 3550 1700
 F 0 "C3" H 3668 1746 50  0000 L CNN
-F 1 "CP" H 3668 1655 50  0000 L CNN
-F 2 "" H 3588 1550 50  0001 C CNN
+F 1 "10u" H 3668 1655 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 3588 1550 50  0001 C CNN
 F 3 "~" H 3550 1700 50  0001 C CNN
 	1    3550 1700
 	1    0    0    -1  
@@ -322,7 +299,7 @@ U 1 1 61A87F1D
 P 2850 3250
 F 0 "J14" H 2900 3567 50  0000 C CNN
 F 1 "ISP" H 2900 3476 50  0000 C CNN
-F 2 "" H 2850 3250 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 2850 3250 50  0001 C CNN
 F 3 "~" H 2850 3250 50  0001 C CNN
 	1    2850 3250
 	1    0    0    -1  
@@ -390,7 +367,7 @@ U 1 1 61D628EA
 P 2100 1200
 F 0 "D6" V 2146 1120 50  0000 R CNN
 F 1 "D" V 2055 1120 50  0000 R CNN
-F 2 "" H 2100 1200 50  0001 C CNN
+F 2 "Diode_SMD:D_SOD-123F" H 2100 1200 50  0001 C CNN
 F 3 "~" H 2100 1200 50  0001 C CNN
 	1    2100 1200
 	0    -1   -1   0   
@@ -407,7 +384,7 @@ U 1 1 61B3D105
 P 850 3200
 F 0 "J12" H 768 3517 50  0000 C CNN
 F 1 "UART" H 768 3426 50  0000 C CNN
-F 2 "" H 850 3200 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 850 3200 50  0001 C CNN
 F 3 "~" H 850 3200 50  0001 C CNN
 	1    850  3200
 	-1   0    0    -1  
@@ -813,7 +790,7 @@ U 1 1 6190240F
 P 4500 2700
 F 0 "Y1" H 4500 2432 50  0000 C CNN
 F 1 "12MHz" H 4500 2523 50  0000 C CNN
-F 2 "" H 4500 2700 50  0001 C CNN
+F 2 "Crystal:Crystal_SMD_5032-4Pin_5.0x3.2mm" H 4500 2700 50  0001 C CNN
 F 3 "~" H 4500 2700 50  0001 C CNN
 	1    4500 2700
 	-1   0    0    1   
@@ -886,21 +863,8 @@ Text GLabel 6750 4700 2    50   Input ~ 0
 ROT_CLK_C
 Text GLabel 6750 4800 2    50   Input ~ 0
 ROT_DAT_C
-$Comp
-L Device:R R1
-U 1 1 619845E3
-P 5950 1800
-F 0 "R1" V 5743 1800 50  0000 C CNN
-F 1 "0" V 5834 1800 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5880 1800 50  0001 C CNN
-F 3 "~" H 5950 1800 50  0001 C CNN
-	1    5950 1800
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	5700 1650 5700 1800
-Wire Wire Line
-	5700 1800 5800 1800
 Wire Wire Line
 	5700 1800 5700 1900
 Wire Wire Line
@@ -914,8 +878,6 @@ Wire Wire Line
 	6000 1900 6200 1900
 Wire Wire Line
 	6200 1900 6200 1800
-Wire Wire Line
-	6100 1800 6200 1800
 Connection ~ 6200 1800
 Wire Wire Line
 	6200 1800 6200 1650
@@ -1231,7 +1193,7 @@ U 1 1 61C85C74
 P 2450 4800
 F 0 "J13" H 2507 5267 50  0000 C CNN
 F 1 "USB_B_Mini" H 2507 5176 50  0000 C CNN
-F 2 "" H 2600 4750 50  0001 C CNN
+F 2 "Connector_USB:USB_Mini-B_Wuerth_65100516121_Horizontal" H 2600 4750 50  0001 C CNN
 F 3 "~" H 2600 4750 50  0001 C CNN
 	1    2450 4800
 	1    0    0    -1  
@@ -1318,9 +1280,50 @@ U 1 1 6199597A
 P 1600 4300
 F 0 "SW1" H 1600 4767 50  0000 C CNN
 F 1 "Function" H 1600 4676 50  0000 C CNN
-F 2 "" H 1600 4300 50  0001 C CNN
+F 2 "Button_Switch_THT:SW_DIP_SPSTx04_Slide_9.78x12.34mm_W7.62mm_P2.54mm" H 1600 4300 50  0001 C CNN
 F 3 "~" H 1600 4300 50  0001 C CNN
 	1    1600 4300
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:C C2
+U 1 1 6199BD38
+P 2350 1700
+F 0 "C2" H 2465 1746 50  0000 L CNN
+F 1 "100n" H 2465 1655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 2388 1550 50  0001 C CNN
+F 3 "~" H 2350 1700 50  0001 C CNN
+	1    2350 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Net-Tie_2 NT1
+U 1 1 619C0CF5
+P 1200 1950
+F 0 "NT1" H 1200 2131 50  0000 C CNN
+F 1 "Net-Tie_2" H 1200 2040 50  0000 C CNN
+F 2 "NetTie:NetTie-2_THT_Pad1.0mm" H 1200 1950 50  0001 C CNN
+F 3 "~" H 1200 1950 50  0001 C CNN
+	1    1200 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1100 1950 1050 1950
+Wire Wire Line
+	1300 1950 1350 1950
+$Comp
+L Device:Net-Tie_2 NT2
+U 1 1 619D7200
+P 5950 1800
+F 0 "NT2" H 5950 1981 50  0000 C CNN
+F 1 "Net-Tie_2" H 5950 1890 50  0000 C CNN
+F 2 "NetTie:NetTie-2_THT_Pad1.0mm" H 5950 1800 50  0001 C CNN
+F 3 "~" H 5950 1800 50  0001 C CNN
+	1    5950 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 1800 5850 1800
+Wire Wire Line
+	6050 1800 6200 1800
 $EndSCHEMATC
