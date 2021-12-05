@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:leg-controller-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -86,11 +85,12 @@ S 9350 850  1100 950
 U 619DAA4C
 F0 "Motor A" 50
 F1 "motor-connections.sch" 50
-F2 "ROT_CLK" I L 9350 1500 50 
-F3 "ROT_DAT" I L 9350 1650 50 
-F4 "MOTOR_CONTROL" I L 9350 1000 50 
-F5 "MOTOR_DISCONNECT" I L 9350 1150 50 
-F6 "MOTOR_SENSE" I L 9350 1300 50 
+F2 "ROT_CLK" I L 9350 1550 50 
+F3 "ROT_DAT" I L 9350 1700 50 
+F4 "MOTOR_CONTROL" I L 9350 950 50 
+F5 "MOTOR_DISCONNECT" I L 9350 1100 50 
+F6 "MOTOR_SENSE" I L 9350 1250 50 
+F7 "LIMIT_SWITCH" I L 9350 1400 50 
 $EndSheet
 $Comp
 L Device:C C1
@@ -211,88 +211,78 @@ Wire Wire Line
 Wire Wire Line
 	2350 1400 2650 1400
 $Sheet
-S 9350 2000 1100 950 
-U 618F2956
-F0 "Motor B" 50
-F1 "motor-connections.sch" 50
-F2 "ROT_CLK" I L 9350 2650 50 
-F3 "ROT_DAT" I L 9350 2800 50 
-F4 "MOTOR_CONTROL" I L 9350 2150 50 
-F5 "MOTOR_DISCONNECT" I L 9350 2300 50 
-F6 "MOTOR_SENSE" I L 9350 2450 50 
-$EndSheet
-$Sheet
 S 9350 3150 1100 950 
 U 618F4190
 F0 "Motor C" 50
 F1 "motor-connections.sch" 50
-F2 "ROT_CLK" I L 9350 3800 50 
-F3 "ROT_DAT" I L 9350 3950 50 
-F4 "MOTOR_CONTROL" I L 9350 3300 50 
-F5 "MOTOR_DISCONNECT" I L 9350 3450 50 
-F6 "MOTOR_SENSE" I L 9350 3600 50 
+F2 "ROT_CLK" I L 9350 3850 50 
+F3 "ROT_DAT" I L 9350 4000 50 
+F4 "MOTOR_CONTROL" I L 9350 3250 50 
+F5 "MOTOR_DISCONNECT" I L 9350 3400 50 
+F6 "MOTOR_SENSE" I L 9350 3550 50 
+F7 "LIMIT_SWITCH" I L 9350 3700 50 
 $EndSheet
 Text Notes 10500 1400 0    50   ~ 0
 (Master copy)
 Wire Wire Line
-	9350 1000 9250 1000
+	9350 950  9250 950 
 Wire Wire Line
-	9350 1150 9250 1150
+	9350 1100 9250 1100
 Wire Wire Line
-	9350 1300 9250 1300
+	9350 1250 9250 1250
 Wire Wire Line
-	9350 1500 9250 1500
+	9350 1550 9250 1550
 Wire Wire Line
-	9350 1650 9250 1650
+	9350 1700 9250 1700
 Wire Wire Line
-	9350 2150 9250 2150
+	9350 2100 9250 2100
 Wire Wire Line
-	9350 2300 9250 2300
+	9350 2250 9250 2250
 Wire Wire Line
-	9350 2450 9250 2450
+	9350 2400 9250 2400
 Wire Wire Line
-	9350 2650 9250 2650
+	9350 2700 9250 2700
 Wire Wire Line
-	9350 2800 9250 2800
+	9350 2850 9250 2850
 Wire Wire Line
-	9350 3300 9250 3300
+	9350 3250 9250 3250
 Wire Wire Line
-	9350 3450 9250 3450
+	9350 3400 9250 3400
 Wire Wire Line
-	9350 3600 9250 3600
+	9350 3550 9250 3550
 Wire Wire Line
-	9350 3800 9250 3800
+	9350 3850 9250 3850
 Wire Wire Line
-	9350 3950 9250 3950
-Text GLabel 9250 1000 0    50   Input ~ 0
+	9350 4000 9250 4000
+Text GLabel 9250 950  0    50   Input ~ 0
 MOTOR_A_CONTROL
-Text GLabel 9250 1150 0    50   Input ~ 0
+Text GLabel 9250 1100 0    50   Input ~ 0
 MOTOR_A_DISCONNECT
-Text GLabel 9250 1300 0    50   Input ~ 0
+Text GLabel 9250 1250 0    50   Input ~ 0
 MOTOR_A_SENSE
-Text GLabel 9250 1500 0    50   Input ~ 0
+Text GLabel 9250 1550 0    50   Input ~ 0
 ROT_CLK_A
-Text GLabel 9250 1650 0    50   Input ~ 0
+Text GLabel 9250 1700 0    50   Input ~ 0
 ROT_DAT_A
-Text GLabel 9250 2150 0    50   Input ~ 0
+Text GLabel 9250 2100 0    50   Input ~ 0
 MOTOR_B_CONTROL
-Text GLabel 9250 2300 0    50   Input ~ 0
+Text GLabel 9250 2250 0    50   Input ~ 0
 MOTOR_B_DISCONNECT
-Text GLabel 9250 2450 0    50   Input ~ 0
+Text GLabel 9250 2400 0    50   Input ~ 0
 MOTOR_B_SENSE
-Text GLabel 9250 2650 0    50   Input ~ 0
+Text GLabel 9250 2700 0    50   Input ~ 0
 ROT_CLK_B
-Text GLabel 9250 2800 0    50   Input ~ 0
+Text GLabel 9250 2850 0    50   Input ~ 0
 ROT_DAT_B
-Text GLabel 9250 3300 0    50   Input ~ 0
+Text GLabel 9250 3250 0    50   Input ~ 0
 MOTOR_C_CONTROL
-Text GLabel 9250 3450 0    50   Input ~ 0
+Text GLabel 9250 3400 0    50   Input ~ 0
 MOTOR_C_DISCONNECT
-Text GLabel 9250 3600 0    50   Input ~ 0
+Text GLabel 9250 3550 0    50   Input ~ 0
 MOTOR_C_SENSE
-Text GLabel 9250 3800 0    50   Input ~ 0
+Text GLabel 9250 3850 0    50   Input ~ 0
 ROT_CLK_C
-Text GLabel 9250 3950 0    50   Input ~ 0
+Text GLabel 9250 4000 0    50   Input ~ 0
 ROT_DAT_C
 $Comp
 L Connector_Generic:Conn_02x03_Odd_Even J14
@@ -379,55 +369,6 @@ Wire Wire Line
 	2100 1400 2350 1400
 Wire Wire Line
 	2100 1050 2100 1000
-$Comp
-L Connector_Generic:Conn_01x04 J12
-U 1 1 61B3D105
-P 850 3200
-F 0 "J12" H 768 3517 50  0000 C CNN
-F 1 "UART" H 768 3426 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 850 3200 50  0001 C CNN
-F 3 "~" H 850 3200 50  0001 C CNN
-	1    850  3200
-	-1   0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0104
-U 1 1 61B46C35
-P 1150 3500
-F 0 "#PWR0104" H 1150 3250 50  0001 C CNN
-F 1 "GND" H 1155 3327 50  0000 C CNN
-F 2 "" H 1150 3500 50  0001 C CNN
-F 3 "" H 1150 3500 50  0001 C CNN
-	1    1150 3500
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	1150 3500 1150 3400
-Wire Wire Line
-	1150 3400 1050 3400
-$Comp
-L power:+3.3V #PWR0105
-U 1 1 61B4CF00
-P 1150 3000
-F 0 "#PWR0105" H 1150 2850 50  0001 C CNN
-F 1 "+3.3V" H 1165 3173 50  0000 C CNN
-F 2 "" H 1150 3000 50  0001 C CNN
-F 3 "" H 1150 3000 50  0001 C CNN
-	1    1150 3000
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	1150 3000 1150 3100
-Wire Wire Line
-	1150 3100 1050 3100
-Text GLabel 1150 3200 2    50   Input ~ 0
-UART_TXD
-Text GLabel 1150 3300 2    50   Input ~ 0
-UART_RXD
-Wire Wire Line
-	1150 3300 1050 3300
-Wire Wire Line
-	1050 3200 1150 3200
 Wire Wire Line
 	3550 6200 3450 6200
 Wire Wire Line
@@ -475,8 +416,8 @@ L Device:R R37
 U 1 1 6193B4C7
 P 2750 6450
 F 0 "R37" H 2820 6496 50  0000 L CNN
-F 1 "R" H 2820 6405 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2680 6450 50  0001 C CNN
+F 1 "330" H 2820 6405 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2680 6450 50  0001 C CNN
 F 3 "~" H 2750 6450 50  0001 C CNN
 	1    2750 6450
 	1    0    0    -1  
@@ -512,8 +453,8 @@ L Device:R R36
 U 1 1 61932DFC
 P 1800 6450
 F 0 "R36" H 1870 6496 50  0000 L CNN
-F 1 "R" H 1870 6405 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1730 6450 50  0001 C CNN
+F 1 "330" H 1870 6405 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1730 6450 50  0001 C CNN
 F 3 "~" H 1800 6450 50  0001 C CNN
 	1    1800 6450
 	1    0    0    -1  
@@ -549,8 +490,8 @@ L Device:R R35
 U 1 1 619282EC
 P 1000 6450
 F 0 "R35" H 1070 6496 50  0000 L CNN
-F 1 "R" H 1070 6405 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 930 6450 50  0001 C CNN
+F 1 "1.5k" H 1070 6405 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 930 6450 50  0001 C CNN
 F 3 "~" H 1000 6450 50  0001 C CNN
 	1    1000 6450
 	1    0    0    -1  
@@ -586,8 +527,8 @@ L Device:R R41
 U 1 1 6191371D
 P 3550 6450
 F 0 "R41" H 3620 6496 50  0000 L CNN
-F 1 "R" H 3620 6405 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3480 6450 50  0001 C CNN
+F 1 "330" H 3620 6405 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3480 6450 50  0001 C CNN
 F 3 "~" H 3550 6450 50  0001 C CNN
 	1    3550 6450
 	1    0    0    -1  
@@ -858,8 +799,6 @@ Text GLabel 6750 3000 2    50   Input ~ 0
 ROT_DAT_A
 Text GLabel 6750 5000 2    50   Input ~ 0
 ROT_CLK_B
-Text GLabel 6750 5100 2    50   Input ~ 0
-ROT_DAT_B
 Text GLabel 6750 4700 2    50   Input ~ 0
 ROT_CLK_C
 Text GLabel 6750 4800 2    50   Input ~ 0
@@ -935,8 +874,6 @@ Wire Wire Line
 Wire Wire Line
 	6750 5000 6500 5000
 Wire Wire Line
-	6500 5100 6750 5100
-Wire Wire Line
 	6750 2500 6500 2500
 Wire Wire Line
 	6500 2400 6750 2400
@@ -1008,17 +945,6 @@ Text GLabel 6750 3200 2    50   Input ~ 0
 LED_RUN
 Wire Wire Line
 	6750 5600 6500 5600
-$Comp
-L MCU_Microchip_ATmega:ATmega644P-20AU U2
-U 1 1 61882654
-P 5900 4000
-F 0 "U2" H 5300 4050 50  0000 C CNN
-F 1 "ATmega644P-20AU" H 5000 3950 50  0000 C CNN
-F 2 "Package_QFP:TQFP-44_10x10mm_P0.8mm" H 5900 4000 50  0001 C CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-42744-ATmega644P_Datasheet.pdf" H 5900 4000 50  0001 C CNN
-	1    5900 4000
-	1    0    0    -1  
-$EndComp
 Text GLabel 6750 3400 2    50   Input ~ 0
 USB_D+
 Text GLabel 6750 3500 2    50   Input ~ 0
@@ -1067,10 +993,6 @@ Wire Wire Line
 	6750 4500 6500 4500
 Wire Wire Line
 	6500 4600 6750 4600
-Text GLabel 6750 5200 2    50   Input ~ 0
-UART_RXD
-Text GLabel 6750 5300 2    50   Input ~ 0
-UART_TXD
 Wire Wire Line
 	6750 5300 6500 5300
 Wire Wire Line
@@ -1079,8 +1001,6 @@ Text GLabel 6750 2600 2    50   Input ~ 0
 FUNCTION_0
 Text GLabel 6750 2700 2    50   Input ~ 0
 FUNCTION_1
-Text GLabel 6750 2800 2    50   Input ~ 0
-FUNCTION_2
 Wire Wire Line
 	6750 2600 6500 2600
 Wire Wire Line
@@ -1161,7 +1081,7 @@ U 1 1 61CB53AC
 P 3100 4400
 F 0 "R38" H 3170 4446 50  0000 L CNN
 F 1 "1.5k" H 3170 4355 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3030 4400 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3030 4400 50  0001 C CNN
 F 3 "~" H 3100 4400 50  0001 C CNN
 	1    3100 4400
 	1    0    0    -1  
@@ -1172,7 +1092,7 @@ U 1 1 61C9D08A
 P 3350 4900
 F 0 "R40" V 3250 4900 50  0000 C CNN
 F 1 "68" V 3150 4900 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3280 4900 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3280 4900 50  0001 C CNN
 F 3 "~" H 3350 4900 50  0001 C CNN
 	1    3350 4900
 	0    -1   -1   0   
@@ -1183,7 +1103,7 @@ U 1 1 61C9C39E
 P 3350 4800
 F 0 "R39" V 3143 4800 50  0000 C CNN
 F 1 "68" V 3234 4800 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3280 4800 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3280 4800 50  0001 C CNN
 F 3 "~" H 3350 4800 50  0001 C CNN
 	1    3350 4800
 	0    1    1    0   
@@ -1234,13 +1154,11 @@ F 3 "" H 1200 5300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1200 4300 1300 4300
-Wire Wire Line
 	1200 4200 1300 4200
 Wire Wire Line
 	1200 4100 1300 4100
-Text GLabel 1200 4300 0    50   Input ~ 0
-FUNCTION_2
+Text GLabel 1200 4400 0    50   Input ~ 0
+RESET
 Text GLabel 1200 4200 0    50   Input ~ 0
 FUNCTION_1
 Text GLabel 1200 4100 0    50   Input ~ 0
@@ -1353,7 +1271,6 @@ Wire Wire Line
 	4650 1200 4650 1350
 NoConn ~ 2350 5200
 NoConn ~ 2750 5000
-NoConn ~ 1300 4400
 $Comp
 L power:GNDPWR #PWR0124
 U 1 1 619D9FF3
@@ -1416,4 +1333,52 @@ F 3 "~" H 5300 1350 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5300 1350 5300 1200
+Wire Wire Line
+	6500 5100 6750 5100
+Text GLabel 6750 5100 2    50   Input ~ 0
+ROT_DAT_B
+Text GLabel 6750 5200 2    50   Input ~ 0
+LIMIT_SWITCH_B
+Text GLabel 6750 5300 2    50   Input ~ 0
+LIMIT_SWITCH_C
+Text GLabel 6750 2800 2    50   Input ~ 0
+LIMIT_SWITCH_A
+Wire Wire Line
+	1300 4400 1200 4400
+NoConn ~ 1300 4300
+$Comp
+L MCU_Microchip_ATmega:ATmega644P-20PU U2
+U 1 1 61B00032
+P 5900 4000
+F 0 "U2" H 5900 1911 50  0000 C CNN
+F 1 "ATmega644P-20PU" H 5900 1820 50  0000 C CNN
+F 2 "Package_DIP:DIP-40_W15.24mm" H 5900 4000 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-42744-ATmega644P_Datasheet.pdf" H 5900 4000 50  0001 C CNN
+	1    5900 4000
+	1    0    0    -1  
+$EndComp
+Text GLabel 9250 1400 0    50   Input ~ 0
+LIMIT_SWITCH_A
+Wire Wire Line
+	9250 1400 9350 1400
+$Sheet
+S 9350 2000 1100 950 
+U 618F2956
+F0 "Motor B" 50
+F1 "motor-connections.sch" 50
+F2 "ROT_CLK" I L 9350 2700 50 
+F3 "ROT_DAT" I L 9350 2850 50 
+F4 "MOTOR_CONTROL" I L 9350 2100 50 
+F5 "MOTOR_DISCONNECT" I L 9350 2250 50 
+F6 "MOTOR_SENSE" I L 9350 2400 50 
+F7 "LIMIT_SWITCH" I L 9350 2550 50 
+$EndSheet
+Text GLabel 9250 2550 0    50   Input ~ 0
+LIMIT_SWITCH_B
+Text GLabel 9250 3700 0    50   Input ~ 0
+LIMIT_SWITCH_C
+Wire Wire Line
+	9250 2550 9350 2550
+Wire Wire Line
+	9250 3700 9350 3700
 $EndSCHEMATC
